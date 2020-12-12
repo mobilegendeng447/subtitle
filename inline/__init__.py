@@ -32,14 +32,14 @@ def button(update, context):
         inline_keyboard.append([InlineKeyboardButton(f"{button_name.upper()}", switch_inline_query_current_chat=f"{button_data}")])
 
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
-    query.edit_message_text(text="Select your language", reply_markup=reply_markup)
+    query.edit_message_text(text="Select the language you desired", reply_markup=reply_markup)
 
 def inlinequery(update, context):
     query = update.inline_query.query
     inline = [
         [
-            InlineKeyboardButton("Our Group", url="https://telegram.dog/Keralasbots"),
-            InlineKeyboardButton("Our Channel", url="https://telegram.dog/Keralabotsnews")
+            InlineKeyboardButton("Our Group", url="https://t.me/ParaboyMirror"),
+            InlineKeyboardButton("Report Bug", url="https://t.me/topglobal_epep")
         ]
     ]
     results = [
@@ -49,7 +49,7 @@ def inlinequery(update, context):
             title="Get the File",
             mime_type="application/zip",
             reply_markup=InlineKeyboardMarkup(inline),
-            caption="©️ @GetSubtitles_bot\n\nUse @UnzipTGBot for unzipping this zip file or download the file and unzip manually"
+            caption="@XSubtitleRobot\n\nUse @UnzipTGBot for unzipping this zip file \nor download the file and unzip manually"
         )
     ]
     update.inline_query.answer(results)
