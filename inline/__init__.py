@@ -49,7 +49,7 @@ def inlinequery(update, context):
             title="Get the File",
             mime_type="application/zip",
             reply_markup=InlineKeyboardMarkup(inline),
-            caption="@XSubtitleRobot\n\nUse @UnzipTGBot for unzipping this zip file \nor download the file and unzip manually"
+            caption="Downloaded via @XSubtitleRobot\n\nUse @UnzipTGBot for unzipping this zip file \nor download the file and unzip manually"
         )
     ]
     update.inline_query.answer(results)
