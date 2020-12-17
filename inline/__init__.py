@@ -46,7 +46,7 @@ def inlinequery(update, context):
         InlineQueryResultDocument(
             id=uuid4(),
             document_url=query,
-            title="Get the File",
+            title="Click here",
             mime_type="application/zip",
             reply_markup=InlineKeyboardMarkup(inline),
             caption="Downloaded via @XSubtitleRobot\n\nUse @UnzipTGBot for unzipping this zip file \nor download the file and unzip manually"
